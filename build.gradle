@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+allprojects{
+    group 'ru.clevertec.smirnov'
+    version '1.0.1'
+}
+
+subprojects{
+    repositories {
+        flatDir {
+            dirs "${project.rootDir}/libs"
+        }
+        mavenLocal()
+    }
+}
+
+wrapper {
+    gradleVersion "7.6"
+}

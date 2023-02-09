@@ -1,0 +1,8 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation 'ru.clevertec.smirnov:utils:1.3.5'
+}
+
